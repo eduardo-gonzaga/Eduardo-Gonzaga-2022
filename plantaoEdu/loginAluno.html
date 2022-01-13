@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Aprender</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light text-dark">
+
+    <div class="container mt-3" id="container">
+        <div class="col-md-11">
+            <h2>Login do aluno </h2>
+
+        </div>
+        <form class="was-validated" action="loginAluno.php" method="POST">
+            <div class="mb-1 mt-1">
+                <label for="text">Usuario:</label>
+                <input type="email" class="form-control" id="nome_" placeholder="Seu Email"
+                    name="nome_" required>
+                <div class="invalid-feedback">Por favor preencher este campo.</div>
+            </div>
+            <div class="mb-1">
+                <label for="text">Turma:</label>
+                <input type="text" class="form-control" id="turma_" placeholder="Insira sua Turma"
+                    name="turma_" required>
+                <div class="invalid-feedback">Por favor preencher este campo.</div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="entrar" name="entrar">Entrar</button>
+           
+
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>
